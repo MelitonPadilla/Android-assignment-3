@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25dip"
+    android:minHeight="25dip"
+    android:padding="10dip"
+    android:layout_margin="10dip"
+    android:theme="@style/MyCustomTheme"
+    android:background="@drawable/layout_background">
+    <Button
+        android:text="Test Connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTestConnection" />
+    <CheckBox
+        android:text="Internet Connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbInternetConnection" />
+    <TextView
+        android:text="Type of internet connection if connected (Checked box above)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:text="WiFi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioWiFi" />
+        <RadioButton
+            android:text="Mobile data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioMobileData" />
+        <RadioButton
+            android:text="Ethernet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioEthernet" />
+        <RadioButton
+            android:text="WiMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioWiMax" />
+    </RadioGroup>
+</LinearLayout>

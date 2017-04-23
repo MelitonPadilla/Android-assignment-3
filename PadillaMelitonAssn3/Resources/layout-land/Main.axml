@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25dip"
+    android:minHeight="25dip"
+    android:padding="10dip"
+    android:layout_margin="10dip"
+    android:theme="@style/MyCustomTheme"
+    android:background="@drawable/layout_background">
+  <Button
+      android:text="Second Activity"
+      android:layout_marginLeft="10dp"
+      android:layout_centerVertical="true"
+      android:layout_width="155dp"
+      android:layout_height="match_parent"
+      android:id="@+id/btnSecondActivity" />
+  <Button
+      android:text="Third Activity"
+      android:layout_centerVertical="true"
+      android:layout_toRightOf="@+id/btnSecondActivity"
+      android:layout_width="155dp"
+      android:layout_height="match_parent"
+      android:id="@+id/btnThirdActivity" />
+  <Button
+      android:text="Fourth Activity"
+      android:layout_toRightOf="@id/btnThirdActivity"
+      android:layout_centerVertical="true"
+      android:layout_width="155dp"
+      android:layout_height="match_parent"
+      android:id="@+id/btnFourthActivity" />
+  <Button
+      android:text="Fifth Activity"
+      android:layout_toRightOf="@id/btnFourthActivity"
+      android:layout_centerVertical="true"
+      android:layout_width="155dp"
+      android:layout_height="match_parent"
+      android:id="@+id/btnFifthActivity" />
+</RelativeLayout>

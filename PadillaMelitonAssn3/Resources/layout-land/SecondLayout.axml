@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25dip"
+    android:minHeight="25dip"
+    android:padding="10dip"
+    android:layout_margin="10dip"
+    android:theme="@style/MyCustomTheme"
+    android:background="@drawable/layout_background">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1">
+        <TableRow>
+            <TextView
+                android:layout_weight=".70"
+                android:text="Orientation"
+                android:padding="3dip" />
+            <TextView
+                android:layout_weight=".30"
+                android:text="Landscape"
+                android:gravity="right"
+                android:padding="1dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_weight=".70"
+                android:text="Screen width (real)"
+                android:padding="3dip" />
+            <TextView
+                android:layout_weight=".30"
+                android:text=""
+                android:gravity="right"
+                android:padding="3dip"
+                android:id="@+id/tvScreenWidthData" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_weight=".70"
+                android:text="Screen height (real)"
+                android:padding="3dip" />
+            <TextView
+                android:layout_weight=".30"
+                android:text=""
+                android:gravity="right"
+                android:padding="3dip"
+                android:id="@+id/tvScreenHeightData" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:text="Get Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGetData" />
+</LinearLayout>
